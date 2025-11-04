@@ -1,7 +1,7 @@
 
 # 📊 Dataxx — Streamlit + n8n Automation App
 
-Cette application permet d'exécuter des workflows via n8n depuis une interface Streamlit, afin d’automatiser la collecte et l'analyse de données.
+Cette application permet d'exécuter des workflows via n8n depuis une interface Streamlit, afin d’automatiser la collecte et l'analyse de données de sponsoring de clubs.
 
 ---
 
