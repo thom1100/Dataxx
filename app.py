@@ -123,7 +123,7 @@ if st.button("🔍 Rechercher des sponsors", type="primary", use_container_width
     # Envoi de la requête POST au Webhook
     with st.spinner("🔍 Recherche en cours..."):
         try:
-            response = requests.post(webhook_url_search, json=search_data, timeout=60, headers = "X-API-KEY": API_KEY)
+            response = requests.post(webhook_url_search, json=search_data, timeout=60, headers = "N8N_API_KEY": API_KEY)
 
             # Vérification de la réponse
             if response.status_code == 200:
@@ -287,7 +287,7 @@ if 'selected_sponsor' in st.session_state:
         with st.spinner("⏳ Requête en cours d'exécution..."):
             try:
                 # Envoi de la requête POST au Webhook N8N
-                response_2 = requests.post(webhook_url_detail, json=detailed_data, timeout=60)
+                response_2 = requests.post(webhook_url_detail, json=detailed_data, timeout=60, headers = "N8N_API_KEY": API_KEY)
 
                 # Vérification de la réponse
                 if response_2.status_code == 200:
@@ -438,7 +438,7 @@ if 'selected_club' in st.session_state:
         with st.spinner("⏳ Recherche des sponsors des 10 dernières années..."):
             try:
                 # Envoi de la requête POST au Webhook N8N
-                response_3 = requests.post(webhook_url_extract, json=final_data, timeout=60)
+                response_3 = requests.post(webhook_url_extract, json=final_data, timeout=60, headers = "N8N_API_KEY": API_KEY)
 
                 # Vérification de la réponse
                 if response_3.status_code == 200:
