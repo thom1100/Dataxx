@@ -16,7 +16,6 @@ webhook_url_extract_test = "https://thom1100.app.n8n.cloud/webhook-test/3fde3a0d
 webhook_url_extract_prod = "https://thom1100.app.n8n.cloud/webhook/3fde3a0d-2564-4d80-af29-000b04448596"
 webhook_url_extract = webhook_url_extract_prod
 
-WEBHOOK = st.secrets["N8N_WEBHOOK_URL"]
 API_KEY = st.secrets["N8N_API_KEY"]
 
 # Initialisation de la session
